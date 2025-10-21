@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import ResourcesSection from "./components/ResourcesSection"; // New import
 import Footer from "./components/Footer";
+import "./App.css";
 
 export default function App() {
   return (

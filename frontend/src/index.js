@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// index.js (or main.jsx)
+// Entry point of the HPIC React app
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";     // Global styles
+import App from "./App";  // Main app component
+
+// Create the root element and render the app inside it
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <App />   {/* Main application */}
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// No need for reportWebVitals()
+// You can safely remove it since you’re not tracking performance metrics
