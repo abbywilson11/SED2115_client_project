@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* ===== General Page Styling ===== */
+.App {
+  font-family: "Arial", sans-serif;
+  background: #f8f8f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #b42b3d, #e85c5c, #f6b2b2);
+  color: white;
   text-align: center;
+  padding: 2em 1em;
+  border-bottom: 5px solid #a1202f;
+}
+header h1 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+header .tagline {
+  font-size: 1em;
+  font-style: italic;
+  opacity: 0.9;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* ===== Main Content ===== */
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 2em 1.5em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  color: #b42b3d;
+  margin-bottom: 0.5em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* ===== Cards ===== */
 .card {
-  padding: 2em;
+  background: white;
+  padding: 1.2em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card a {
+  display: inline-block;
+  color: #b42b3d;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.5em;
 }
 
-.read-the-docs {
-  color: #888;
+/* ===== Footer ===== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.85em;
 }
