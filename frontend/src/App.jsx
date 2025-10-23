@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <ResourcesSection /> {/* Add the new section here */}
+      <ResourcesSection /> 
       <Footer />
     </div>
   );
