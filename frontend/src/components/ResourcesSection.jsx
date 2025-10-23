@@ -6,7 +6,7 @@ export default function ResourcesSection() {
   const resources = [
     {
       id: 1,
-      title: "A guide for people with sickle cell disease.",
+      title: "A guide for people with sickle cell disease",
       link: "/brochures/qs-sickle-cell-disease-patient-guide-en.pdf",
     },
     {
