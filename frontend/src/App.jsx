@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/Header";
-import ResourcesSection from "./components/ResourcesSection"; // New import
-import Footer from "./components/Footer";
-import "./App.css";
+import Header from "./components/Header"; //import header
+import ResourcesSection from "./components/ResourcesSection"; // import resources
+import Footer from "./components/Footer"; //import footer
+import "./App.css"; //import app style
 
 export default function App() {
   return (

@@ -9,9 +9,9 @@ export default function Footer() {
       {/* Simple copyright */}
       <p>© 2025 Health Promotion International Centre (HPIC)</p>
 
-      {/* Optional helpful link */}
+      {/* Optional helpful link about sicklecell disease*/}
       <a
-        href="https://www.cdc.gov/ncbddd/sicklecell/index.html"
+        href="https://www.cdc.gov/ncbddd/sicklecell/index.html" /*link to website*/
         target="_blank"
         rel="noopener noreferrer"
       >

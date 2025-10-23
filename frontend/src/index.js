@@ -13,6 +13,3 @@ root.render(
     <App />   {/* Main application */}
   </React.StrictMode>
 );
-
-// No need for reportWebVitals()
-// You can safely remove it since you’re not tracking performance metrics
