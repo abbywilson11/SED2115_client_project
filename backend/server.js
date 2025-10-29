@@ -2,13 +2,21 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-import resourcesRoutes from "./resourcesRoutes.js"; // NEW IMPORT
+import resourcesRoutes from "./resourcesRoutes.js";
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Register the new resources API endpoint
+// Register API endpoint
 app.use("/api/resources", resourcesRoutes);
 
-app.listen(5000, () => console.log("Server running on http://localhost:5000"));
+// Use environment port if available, otherwise fallback to 5000
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  if (!process.env.PORT) {
+    console.log("Running locally at http://localhost:5000");
+  }
+});
