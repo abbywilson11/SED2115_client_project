@@ -12,7 +12,7 @@ export default function Header() {
 
       {/* Subheading or tagline */}
       <p className="tagline">
-        Learn. Prevent. Support.
+        Search Nearby Hospitals and View Brochures on SCD 
       </p>
     </header>
   );

@@ -6,8 +6,8 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="footer">
-      {/* Simple copyright */}
-      <p>© 2025 Health Promotion International Centre (HPIC)</p>
+      {/* copyright */}
+      <p>© 2025 Health Promotion International Centre (HPIC)</p> 
 
       {/* Optional helpful link about sicklecell disease*/}
       <a

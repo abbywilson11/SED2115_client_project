@@ -22,7 +22,7 @@
 }
 
 .resource-card a {
-  color: #1565c0;
+  color:#5c6bc0;
   text-decoration: none;
   font-weight: bold;
 }
@@ -30,7 +30,7 @@
 /* --- HEADER STYLING --- */
 .header {
   background: linear-gradient(90deg, #5c6bc0, #3949ab);
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
   border-radius: 0 0 20px 20px;
@@ -44,25 +44,36 @@
 
 .header .tagline {
   font-style: italic;
+  color: white;
   opacity: 0.9;
   font-size: 1rem;
 }
 
-/* --- FOOTER STYLING --- */
+/* Footer container */
 .footer {
-  background: #283593;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  border-radius: 20px 20px 0 0;
-  margin-top: 30px;
+  background: #283593;          /* Deep blue background */
+  text-align: center;           /* Centered text */
+  padding: 20px;                /* Padding inside footer */
+  border-radius: 20px 20px 0 0; /* Rounded top corners */
+  margin-top: 30px;             /* Space from above section */
 }
 
+/* Force text inside footer to white */
+.footer p,
+.footer span {
+  color: #ffffff !important;    /* Override any global styles */
+}
+
+/* Footer links */
 .footer a {
-  color: #bbdefb;
+  color: #bbdefb !important;    /* Light blue links */
   text-decoration: none;
+  display: block;
+  margin-top: 5px;
 }
 
+/* Link hover effect */
 .footer a:hover {
   text-decoration: underline;
 }
+
