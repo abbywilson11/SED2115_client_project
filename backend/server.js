@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-import resourcesRoutes from "./routes/resourcesRoutes.js"; // NEW IMPORT
+import resourcesRoutes from "./resourcesRoutes.js"; // NEW IMPORT
 
 const app = express();
 app.use(cors());
