@@ -7,7 +7,12 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// API endpoint
+// Root route (optional)
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
+// API route
 app.use("/api/resources", resourcesRoutes);
 
 // Use Render port or fallback to 5000 locally
