@@ -1,10 +1,12 @@
+// Express router for the resource data module
 import express from "express";
+import resourcesData from "../data/resourcesData.js";
 
 const router = express.Router();
 
-// Example endpoint
+// Route to get all educational brochures
 router.get("/", (req, res) => {
-  res.json([{ id: 1, name: "Example Resource" }]);
+  res.json(resourcesData); // Send all resources as JSON
 });
 
 export default router;
