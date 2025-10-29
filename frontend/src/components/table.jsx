@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "./App.css"
+import "./Table.css"
 
-function App() {
+function Table() {
   const [city, setCity] = useState("") 
   const [hospitals, setHospitals] = useState([]) 
   const [loading, setLoading] = useState(false)
@@ -103,5 +103,5 @@ function App() {
   )
 }
 
-export default App
+export default Table
 
