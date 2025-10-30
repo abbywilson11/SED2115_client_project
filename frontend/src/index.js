@@ -9,6 +9,8 @@ import App from "./App";  // Main app component
 // Example
 const response = await fetch(`${import.meta.env.VITE_API_URL}/api/resources`);
 const data = await response.json();
+console.log(data); // check if data arrives
+
 
 // Create the root element and render the app inside it
 const root = ReactDOM.createRoot(document.getElementById("root"));
