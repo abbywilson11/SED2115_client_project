@@ -2,7 +2,7 @@
 import React from "react";
 
 export default function ResourcesSection() {
-  // Static list of your 6 brochures
+  // Static list of 6 brochures
   const resources = [
     {
       id: 1,
