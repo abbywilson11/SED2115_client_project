@@ -13,16 +13,13 @@ export default function ResourcesSection() {
 
   const [resources, setResources] = useState(staticResources);
 
-  useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/resources`)
-      .then(res => res.json())
-      .then(data => {
-        if (data && Array.isArray(data) && data.length > 0) {
-          setResources(data); // use backend data if available
-        }
-      })
-      .catch(err => console.error("Failed to fetch resources:", err));
-  }, []);
+  // Inside a React component
+useEffect(() => {
+  fetch("http://localhost:5000/api/resources") // or import.meta.env.VITE_API_URL + "/api/resources"
+    .then(res => res.json())
+    .then(data => setResources(data))
+    .catch(err => console.error(err));
+}, []);
 
   return (
     <section className="resources">
