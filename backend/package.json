@@ -1,11 +1,17 @@
-import express from 'express'
-import resourcesData from "../data/resourcesData.js";
-
-const router = express.Router();
-
-// Route to get all educational brochures
-router.get("/", (req, res) => {
-  res.json(resourcesData); // Send all resources as JSON
-});
-
-export default router;
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
